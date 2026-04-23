@@ -1,0 +1,174 @@
+:root{
+--rosa:#E8A0BF;
+--bege:#FFF8F5;
+--escuro:#2D1B2E;
+}
+
+body{
+margin:0;
+font-family:sans-serif;
+background:var(--bege);
+color:var(--escuro);
+}
+
+/* HEADER */
+.header{
+position:fixed;
+width:100%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+z-index:100;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+.hero{
+padding:120px 20px;
+}
+
+.hero-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.hero-img img{
+width:300px;
+border-radius:20px;
+}
+
+.title{
+color:var(--rosa);
+}
+
+/* BOTÕES */
+.btn{
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+}
+
+.btn-primary{
+background:var(--rosa);
+color:white;
+}
+
+.btn-secondary{
+border:2px solid var(--rosa);
+color:var(--rosa);
+}
+
+/* SECTION */
+.section{
+padding:80px 20px;
+text-align:center;
+max-width:1000px;
+margin:auto;
+}
+
+/* SKILLS */
+.skills{
+max-width:600px;
+margin:auto;
+}
+
+.skill{
+margin-bottom:20px;
+text-align:left;
+}
+
+.bar{
+background:#eee;
+height:8px;
+border-radius:10px;
+}
+
+.bar div{
+background:var(--rosa);
+height:8px;
+border-radius:10px;
+}
+
+/* TIMELINE */
+.timeline{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.timeline-item{
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+/* PROJETOS */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTATO */
+.contact-box{
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:white;
+margin-top:50px;
+}
+
+/* ANIMAÇÃO */
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:0.6s;
+}
+
+.reveal.show{
+opacity:1;
+transform:translateY(0);
+}
